@@ -5,6 +5,8 @@
     <div class="footer-social">
         <div class="footer-container clearfix">
             <div class="social-list">
+                <a href="http://www.beifengtz.com" class="social person-page">个人首页</a>
+                <a href="https://vr.beifengtz.com" class="social VR360">VR360</a>
                 <th:block th:each="index:${commons.social()}">
                     <th:block th:if="${index.value}!=null and ${index.value}!=''">
                         <th:block th:switch="${index.key}">
@@ -39,8 +41,8 @@
                             <img style="display: block;margin: 0 auto;" th:src="@{/user/img/logo.png}" th:alt="${commons.site_title()}"/>
                         </a>
                         <br/>
-                        <p>&copy; 2018 <a  th:href="${commons.site_url('/')}" target="_blank"
-                                         rel="nofollow">Beifengtz Blog</a>
+                        <p>&copy; 2019 CopyRight <a  href="http://www.beifengtz.com" target="_blank"
+                                         rel="nofollow">Beifengtz</a>
                         </p>
                         <br/>
                         <p>	蜀ICP备17034479号-1</p>

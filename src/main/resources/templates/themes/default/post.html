@@ -20,6 +20,13 @@
             本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名,转载请标明出处<br/>最后编辑时间为:
             <th:block th:text="${commons.fmtdate(article.modified, 'yyyy/MM/dd HH:mm')}"/>
         </p>
+        <div>
+            <p style="margin-top: 20px;">微信公众号浏览体验更佳，在这里还有更多优秀文章为你奉上，快来关注吧！</p>
+            <img style="display: block;margin: 20px auto;width: 220px;" th:src="@{/user/wechat.jpg}"/>
+            <p style="font-size: 25px;text-align: center">
+                北风IT之路
+            </p>
+        </div>
     </div>
 </article>
 <div th:replace="themes/default/comments::comments"></div>
